@@ -1,4 +1,4 @@
-let c = rxjs.defer(() => fetch('/test'));
+let c = rxjs.defer(() => fetch('/objects'));
 c.subscribe(
     response => {
         console.log('NEXT!', response);
@@ -16,3 +16,4 @@ c.subscribe(
     err => console.error('ERROR!', err),
     () => console.warn('COMPLETED!')
 );
+
